@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Простой сайт</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="media-box" id="mediaBox">
+    <!-- Можно менять на <img> или <video> -->
+    <video id="mediaElement" src="sample/IMG_9394.MP4" controls muted></video>
+    <!-- Пример фото вместо видео:
+    <img id="mediaElement" src="sample-photo.jpg" alt="Пример фото" />
+    -->
+  </div>
+
+  <!-- Полноэкранное окно -->
+  <div id="fullscreenOverlay" class="fullscreen-overlay hidden">
+    <button id="closeBtn" class="close-btn">×</button>
+    <div id="fullscreenContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
